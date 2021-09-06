@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{789F5467-94AD-426D-A981-38167E5E0BAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CongProject</RootNamespace>
+    <AssemblyName>CongProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\phu.nv\Desktop\last\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>079F7A69AE91D11216F7E7E323B515D60E6F7DB7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CongProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>plan.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Xpo.21.1.3\lib\net452\DevExpress.Xpo.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.13.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.13.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.11\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\enumAction.cs" />
+    <Compile Include="Common\enumPlanStatus.cs" />
+    <Compile Include="Common\enumStatusAction.cs" />
+    <Compile Include="Common\enumStatusForm.cs" />
+    <Compile Include="Common\ExtensionMethod.cs" />
+    <Compile Include="Common\GridCheckMarksSelection.cs" />
+    <Compile Include="Common\StringCipher.cs" />
+    <Compile Include="DAL\Data.cs" />
+    <Compile Include="Entities\AppDbContext.cs" />
+    <Compile Include="Entities\tblAccount.cs" />
+    <Compile Include="Entities\tblComponent.cs" />
+    <Compile Include="Entities\tblComponentType.cs" />
+    <Compile Include="Entities\tblLog.cs" />
+    <Compile Include="Entities\tblPermission.cs" />
+    <Compile Include="Entities\tblPlan.cs" />
+    <Compile Include="Entities\tblReport.cs" />
+    <Compile Include="Entities\tblResource.cs" />
+    <Compile Include="Entities\tblRisk.cs" />
+    <Compile Include="Entities\tblRole.cs" />
+    <Compile Include="Entities\tblSolution.cs" />
+    <Compile Include="Entities\tblUser.cs" />
+    <Compile Include="BCDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountEdit.Designer.cs">
+      <DependentUpon>frmAccountEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmStart.Designer.cs">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmPermission.Designer.cs">
+      <DependentUpon>frmPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmRole.Designer.cs">
+      <DependentUpon>frmRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmRoleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmRoleManager.Designer.cs">
+      <DependentUpon>frmRoleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountManager.Designer.cs">
+      <DependentUpon>frmAccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmMainManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmMainManager.Designer.cs">
+      <DependentUpon>frmMainManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlanEdit.Designer.cs">
+      <DependentUpon>frmPlanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlan.Designer.cs">
+      <DependentUpon>frmPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmPlanDetail.Designer.cs">
+      <DependentUpon>frmPlanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountCurrent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiEntity\frmAccountCurrent.Designer.cs">
+      <DependentUpon>frmAccountCurrent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105300431142_InitialMigration.cs" />
+    <Compile Include="Migrations\202105300431142_InitialMigration.designer.cs">
+      <DependentUpon>202105300431142_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\AccountModel.cs" />
+    <Compile Include="Model\GroupModel.cs" />
+    <Compile Include="Model\ObjectModel.cs" />
+    <Compile Include="Model\PlanModel.cs" />
+    <Compile Include="Model\RoleModel.cs" />
+    <Compile Include="Model\RolePermissionModel.cs" />
+    <Compile Include="Model\TypeModel.cs" />
+    <Compile Include="Model\UserConfigModel.cs" />
+    <Compile Include="NLogLogger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GuiEntity\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmAccountEdit.resx">
+      <DependentUpon>frmAccountEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmStart.resx">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmPermission.resx">
+      <DependentUpon>frmPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmRole.resx">
+      <DependentUpon>frmRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmRoleManager.resx">
+      <DependentUpon>frmRoleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmAccountManager.resx">
+      <DependentUpon>frmAccountManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmMainManager.resx">
+      <DependentUpon>frmMainManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmPlanEdit.resx">
+      <DependentUpon>frmPlanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmPlan.resx">
+      <DependentUpon>frmPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmPlanDetail.resx">
+      <DependentUpon>frmPlanDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuiEntity\frmAccountCurrent.resx">
+      <DependentUpon>frmAccountCurrent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105300431142_InitialMigration.resx">
+      <DependentUpon>202105300431142_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CongProject_TemporaryKey.pfx" />
+    <None Include="nlog.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="user.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book-19x19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel-21x21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit1-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn-19x19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Infomation-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0ac78c1ceeb81be642a9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="plan.ico" />
+    <None Include="Resources\work_16x16.png" />
+    <None Include="Resources\permission.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\network.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\docx.png" />
+    <None Include="Resources\plan.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
